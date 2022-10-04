@@ -1,0 +1,23 @@
+auto_lookup.auto_lookup:
+  path: '/auto_lookup'
+  defaults:
+    _controller: '\Drupal\auto_lookup\Controller\AutoLookupController::page'
+    _title: 'Our auto lookup list'
+  requirements: 
+    _permission: 'Access Content'
+
+auto_lookup.AutoLookupForm:
+  path: 'auto_lookupForm'
+  defaults:
+    #_form: '\Drupal\auto_lookup\Form\AutoLookupForm'
+    _controller: '\Drupal\auto_lookup\Controller\AutoLookupController::createAutoLookup'
+    _title: 'AutoLookup'
+  requirements: 
+    _permission: 'Access Content'
+
+auto_lookup.getAddressList:
+  path: '/addressList'
+  defaults:
+    _controller: '\Drupal\auto_lookup\Controller\AutoLookupController::getAddressList'
+  requirements:
+    _permission: 'Access Content'

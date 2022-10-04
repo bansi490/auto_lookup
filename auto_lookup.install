@@ -1,0 +1,68 @@
+<?php
+
+    function auto_lookup_schema(){
+        $schema['customegovlpis'] = [
+            'fields'=>[
+                'uprn'=> [ 
+                    'type' => 'varchar',
+                    'length'=> 12, 
+                    'not null' => TRUE
+                ],
+                'sao'=> [  
+                    'type' => 'varchar',
+                    'length'=> 255, 
+                    'not null' => TRUE
+                ],
+                'pao' => [ 
+                    'type' => 'varchar',
+                    'length'=> 255, 
+                    'not null' => TRUE
+                ],
+                'streetName'=> [  
+                    'type' => 'varchar',
+                    'length'=> 50, 
+                    'not null' => TRUE
+                ],
+                'locality'=> [  
+                    'type' => 'varchar',
+                    'length'=> 50, 
+                    'not null' => TRUE
+                ],
+                'postTown'=> [  
+                    'type' => 'varchar',
+                    'length'=> 50, 
+                    'not null' => TRUE
+                ],
+                'county'=> [  
+                    'type' => 'varchar',
+                    'length'=> 50, 
+                    'not null' => TRUE
+                ],
+                'postCode'=> [  
+                    'type' => 'varchar',
+                    'length'=> 8, 
+                    'not null' => TRUE
+                ],
+                'ward'=> [  
+                    'type' => 'varchar',
+                    'length'=> 255, 
+                    'not null' => TRUE
+                ],
+                'easting'=> [  
+                    'type' => 'float',
+                    'size' => 'normal',
+                    'not null' => TRUE
+                ],
+                'northing'=> [ 
+                    'type' => 'float',
+                    'size' => 'normal',
+                    'not null' => TRUE
+                ]
+            ],
+            'indexes'=>[
+                'uprn'=>['uprn']
+            ]
+        ];
+
+        return $schema;
+    }
