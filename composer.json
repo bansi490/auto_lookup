@@ -1,6 +1,6 @@
 {
-    "name": "drupal/auto_lookup",
-    "description": "Find an address by postcode",
+    "name": "rbg/auto_lookup",
+    "description": "Find an address by postcode lookup",
     "type": "drupal-module",
     "version": "1.0.0",
     "require": {
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\AutoLookup\\": "src/"
+            "Rbg\\AutoLookup\\": "src/"
         }
     },
     "authors": [
