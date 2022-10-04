@@ -8,7 +8,7 @@
         "drupal/core": "^9.4",
         "ext-mysqli": "*"
     },
-    "license": "GPL-3.0-or-later",
+    "license": "GPL-3.0",
     "autoload": {
         "psr-4": {
             "Rbg\\AutoLookup\\": "src/"
@@ -20,5 +20,5 @@
             "email": "Bansi.Joshi@royalgreenwich.gov.uk"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
