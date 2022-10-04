@@ -3,11 +3,12 @@
     "description": "Find an address by postcode lookup",
     "type": "drupal-module",
     "version": "1.0.0",
-    "minimum-stability": "dev",
     "require": {
         "php": "^8.1",
-        "drupal/core": "^9.4"
+        "drupal/core": "^9.4",
+        "ext-mysqli": "*"
     },
+    "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Rbg\\AutoLookup\\": "src/"
@@ -18,5 +19,6 @@
             "name": "Bansi Joshi",
             "email": "Bansi.Joshi@royalgreenwich.gov.uk"
         }
-    ]
+    ],
+    "minimum-stability": "dev"
 }
